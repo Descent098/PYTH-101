@@ -1,0 +1,1 @@
+# There are no challenges for this section. Feel free to move on to: 1. Primitive data types and variables
