@@ -1,6 +1,10 @@
 # Python Exercises
 
-The purpose of this repository is to go through each set of exercises sequentially to help you learn python.
+The purpose of this repository is to go through each set of exercises sequentially to help you learn python. Once you have finished reading this file you can start from ```0. Basic syntax and additional course information``` to get the ball rolling.
+
+## Note about markdown files
+
+Markdown files (files that end in .md) are intended to be read in a markdown viewer. The easiest way to read the readme's in each folder is to keep https://github.com/Descent098/python-exercises open in github and navigate to each folder. Github has a built in markdown viewer that will let you read the files in their intended format right on your webpage.
 
 ## Structure
 
