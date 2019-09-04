@@ -5,7 +5,7 @@ The purpose of this repository is to go through each set of exercises sequential
 ## Structure
 
 ```
-├── 0. Basic syntax and language information
+├── 0. Basic syntax and additional course information
 |   ├── challenge.py
 |   ├── exercises.py
 |   └── readme.md
