@@ -169,17 +169,65 @@ print(type(variable_2)) # Prints <class 'str'>
 
     - Any positive or negative **decimal number**
 
+        ```python
+        number_1 = 1.5 # Positive float
+        
+        number_2 = -2.345 # Negative float
+        
+        number_3 = 12366556.7893 # Large positive float
+        
+        number_4 = -432587965423.3457 # Large negative float
+        ```
+
+        
+
 - String
 
+    - Text; Note that this can include numbers 
+
+        ```python
+        variable_1 = "This is a string" # Anything inside the "" is part of the string
+        
+        variable_2 = 'This is a string' # You can also use '' to create strings
+        ```
+
+        
+
 - Boolean
+
+    - Used to indicate **True or False**; Note that True and False also correspond to 1 and 0 respectively
+
+        ```python
+        # Booleans are created by just writing true or false NOTE: Capitalize the first letters
+        variable_1 = True # True or 1
+        
+        Variable_2 = False # False or 0
+        ```
+
+        
 
 
 
 ### Collections
 
+Collections are data types that allow you to store multiple variables inside of them. This is convenient in many cases to store data that is logically grouped together like a shopping list, or names of people in a group/class.
+
+
+
+I will mention 3 of the most common collections but there are actually many **many** more available in python to cover a wide variety of use cases.
+
 - Lists
+    - Allow you to **store** and **change** values that are added to it.
 - Tuples
 - Dictionaries
+
+
+
+### Type Casting
+
+
+
+In python you can convert data between data types.
 
 
 
