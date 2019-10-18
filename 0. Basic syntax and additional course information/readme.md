@@ -1,15 +1,62 @@
 # Basic syntax and additional course information
 
+## Course Goals
+
+There are a few primary goals for this course that are worth outlining off the bat since not all beginner courses are the same in python.
+
+
+
+I have 3 primary goals for you by the end of the course:
+
+1. Get you up and running quickly with developing python code/apps
+2. Write **Maintainable and Readable** code in python
+3. Introduce you to programming concepts if this is your first language
+
+
+
+## Course layout
+
+Each numbered folder (1-6) represents a module/section of this course has 3 files in it:
+
+### readme.md
+
+Information about the topic, the primary resource for reference to complete the exercises and challenge(s). 
+
+### exercises.py
+
+A set of smaller exercises that are intended to gear you up for ```challenge.py```. The exercises are intended to be completed after reading ```readme.md```
+
+### challenge.py
+
+A challenge on the topic of the folder, intended to be completed last.
+
+
+
+The intention is to complete the sections in order (1 then 2 then 3 etc.) and the files in the order as they are laid out above (readme.md then exercises.py then challenge.py). 
+
+
+
+Also where applicable I have put some extra resources for topics in case my explanations suck.
+
+<img src="../Images/Memes/resources.jpg" style="zoom:90%;" />
+
+[source]( https://imgflip.com/i/19fiqp )
+
+
+
+## Getting setup
+
 This course will require you to have a few things to get started:
 
-1. Python (this course is designed for python 3 and up. See *Python installation and setup* section for installation details)
-2. A code editor or IDE (integrated development environment); see *Code editor/IDE setup* section for more details
+1. Python (this course is designed for python 3 and up. See [*Python installation and setup* section](#python-installation-and-setup) for installation details)
+2. A code editor or IDE (integrated development environment); see [*Code editor/IDE setup* section](#code-editor-ide-installation-and-setup) for more details
 3. [git (optional)](https://git-scm.com/); git is a version control system that can be helpful when coding, it is completely optional since you can download a [zipped version of this repository straight from github](https://github.com/Descent098/python-exercises/archive/master.zip).
 
-Just a note, I am not a teacher so feel free to submit feedback to me to help improve this course for future generations.
+Just a note, I am not a teacher so feel free to [submit feedback](mailto:kieran.wood1@ucalgary.ca) to me to help improve this course for future generations.
 
-![alt text](https://pics.me.me/when-you-have-to-teach-yourself-a-subject-because-your-16262454.png "i'm useless")
+![when-your-teacher-is-useless](../Images/Memes/when-your-teacher-is-useless.png)
 
+[source]( https://pics.me.me/when-you-have-to-teach-yourself-a-subject-because-your-16262454.png )
 
 ## Python installation and setup
 
@@ -51,7 +98,6 @@ There are a few options for editors here are the most popular for python:
 - [Atom](https://atom.io/): Install [ide-python](https://atom.io/packages/ide-python)
 - [Sublime text](https://www.sublimetext.com/3)(Free/paid): I have honestly never used it, but here's a guide I found https://www.youtube.com/watch?v=xFciV6Ew5r4
 - [Pycharm](https://www.jetbrains.com/pycharm/) (paid)
-
 
 ## Python basic syntax
 

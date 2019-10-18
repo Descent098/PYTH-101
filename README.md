@@ -39,18 +39,18 @@ Markdown files (files that end in .md) are intended to be read in a markdown vie
 |   └── readme.md
 ```
 
-Each folder has a number in ascending order, the challenges & excersizes are intended to be completed in this order.
+Each folder has a number in ascending order, the challenges & exercises are intended to be completed in this order.
 
 Within each folder there are 3 files
-
-### challenge.py
-
-A challenge on the topic of the folder, intended to be completed last.
-
-### exercises.py
-
-A set of smaller excersises that are intended to gear you up for ```challenge.py```. The excercises are intended to be completed after reading ```readme.md```
 
 ### readme.md
 
 Information about the topic, the primary resource for reference to complete the exercises and challenge(s). 
+
+### exercises.py
+
+A set of smaller exercises that are intended to gear you up for ```challenge.py```. The exercises are intended to be completed after reading ```readme.md```
+
+### challenge.py
+
+A challenge on the topic of the folder, intended to be completed last.
