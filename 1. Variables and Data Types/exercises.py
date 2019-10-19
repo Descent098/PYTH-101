@@ -1,1 +1,5 @@
-# Exercises have not been developed yet
+"""
+    =========== Exercise 1 =============
+
+    ...
+"""

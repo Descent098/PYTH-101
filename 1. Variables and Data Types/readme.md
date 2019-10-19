@@ -210,24 +210,125 @@ print(type(variable_2)) # Prints <class 'str'>
 
 ### Collections
 
-Collections are data types that allow you to store multiple variables inside of them. This is convenient in many cases to store data that is logically grouped together like a shopping list, or names of people in a group/class.
+Collections are data types that allow you to store multiple variables (referred to as elements) inside of them. This is convenient in many cases to store data that is logically grouped together like a shopping list, or names of people in a group/class.
 
 
 
-I will mention 3 of the most common collections but there are actually many **many** more available in python to cover a wide variety of use cases.
+I will mention 3 of the most common collections but there are actually [many]( https://docs.python.org/3.7/library/collections.html ) more available in python to cover a wide variety of use cases.
 
 - Lists
-    - Allow you to **store** and **change** values that are added to it.
+    
+    - Allow you to **store** and **change** values (Sometimes called mutating values) that are added to it.
+    
+    - Here is an example of setting up various types of lists
+    
+        ```python
+        variable_1 = []              # An empty list
+        
+        variable_2 = [2, 4, 6, 8]    # A list of ints
+        
+        variable_3 = [2, "two", 2.1] # A list of mixed data types
+        
+        # You can use the list.append() method to add elements to an existing list
+        variable_2.append(10) # variable_2 is now: [2, 4, 6, 8, 10]
+        ```
+    
+    - You can access values stored in a list by using their ***index***. Indices are counted from zero up as you add elements to the list. Take for example the following list:
+    
+        ```python
+        variable_4 = [4, 9, 2, 7] # This is the list used in the next image & example
+        ```
+    
+        ![list-indicies](../Images/list-indices.png)
+    
+    - So to access the *elements* you would use the following format:
+    
+        ```python
+        print(variable_4[0]) # Prints: 4
+        
+        print(variable_4[1]) # Prints: 9
+        
+        print(variable_4[2]) # Prints: 2
+        
+        print(variable_4[3]) # Prints: 7
+        ```
+    
+        
+
 - Tuples
+
+    - Tuples are similar to lists, the biggest difference being that they are *immutable*, meaning the *elements* cannot be updated after they have been added.  Also *Elements* **cannot** be added to tuples after they have been created. Tuples have a similar syntax to list for creating them, and the exact same syntax for accessing elements:
+
+        ```python
+        variable_1 = ()              # An empty tuple
+        
+        variable_2 = (2, 4, 6, 8)    # A tuple of ints
+        
+        variable_3 = (2, "two", 2.1) # A tuple of mixed data types
+        
+        variable_4 = (4, 9, 2, 7)    # This is the same as the list used in the previous example
+        
+        # Accessing and printing values
+        print(variable_4[0]) # Prints: 4
+        
+        print(variable_4[1]) # Prints: 9
+        
+        print(variable_4[2]) # Prints: 2
+        
+        print(variable_4[3]) # Prints: 7
+        ```
+
+        
+
 - Dictionaries
+
+    - Dictionaries are what's called a key-value store data structure. What this means is that instead of using indices that go up every time something is added, they use key's that correspond to values to access & insert data:
+        ![key-value](../Images/key-value.png)
+
+        ```python
+        variable_1 = {} # Empty dictionary
+        
+        variable_2 = {"name": "John Doe"} # Assigning the key 'name' to the value 'John Doe'
+        
+        # Dictionaries can contain values of different types, but keys must be strings
+        variable_3 = {"name":"John Doe", age: 21, "net worth": 5213.4}
+        
+        # To access a value, use the key as you would an index
+        print(variable_3["name"]) # Prints: John Doe
+        
+        # Adding new key-value pairs to a dictionary uses the same syntax
+        variable_2["age"] = 21 # variable_2 is now: {"name":"John Doe", age: 21}
+        ```
+
+    - Dictionaries are also *mutable* like lists, which means you can add and update *elements* as you please.
+
+
+
+#### Mutability
+
+Mutability, or the ability to mutate/change an element once it has been added to a collection is an important distinction that can cause many common errors. 
+
+
+
+Lists are a *mutable* data structure, meaning their *elements* can be updated while they are part of the list. This means that they should **only** be used in cases where this makes sense, for example a list of configuration information.
+
+
+
+Tuples on the other hand are immutable, meaning once an *element* is in a tuple it will stay as it is, this is useful for places where data <u>shouldn't</u> be changing. For example if you wanted to store a list of Dates of birth, you wouldn't want someone accidentally updating them if they thought it was a list of dates for something else and so a tuple would likely be more appropriate.
 
 
 
 ### Type Casting
 
+In python you can convert data between data types. Python is what's called a **strongly typed** language, what this means is that python won't do any converting unless you **explicitly** ask it to. For example 
 
+```python
+variable_1 = "4" # Currently is the string '4'
 
-In python you can convert data between data types.
+2 + variable_1 # Would throw an error
+
+print(2 + int(variable_1)) # Would convert the string 4 to an int and then print 6
+```
 
 
 
