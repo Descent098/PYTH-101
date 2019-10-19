@@ -14,7 +14,7 @@ Python is an incredibly prominent language in the development community, industr
 
 2. It is fast to develop for; Python makes iterative development incredibly fast, it is short and simple to read + write which makes it ideal for prototyping.
 
-    <img src="/Images/memes/python-pseudocode.jpg" alt="python-pseudocode" style="zoom:67%;" />
+    <img src="/Images/Memes/python-pseudocode.jpg" alt="python-pseudocode" style="zoom:67%;" />
 
 3. Wide range of fields; Python is used in everything from web development, to IoT devices, to the hacking community, to server maintenance/monitoring, to deployment systems etc.
 
