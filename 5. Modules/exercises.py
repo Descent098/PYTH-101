@@ -4,8 +4,8 @@
     import the math module and use math.sqrt() on
     a user inputted variable.
 
-    NOTE: you have the input converted to an int/float
-    automatically using eval(input()).
+    NOTE: you have the input converted to an int
+    automatically using int(input()).
 """
 
 
