@@ -217,7 +217,7 @@ Collections are data types that allow you to store multiple variables (referred 
 I will mention 3 of the most common collections but there are actually [many]( https://docs.python.org/3.7/library/collections.html ) more available in python to cover a wide variety of use cases.
 
 - Lists
-    
+  
     - Allow you to **store** and **change** values (Sometimes called mutating values) that are added to it.
     
     - Here is an example of setting up various types of lists
