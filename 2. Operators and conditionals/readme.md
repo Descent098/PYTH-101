@@ -42,7 +42,35 @@ Arithmetic operators are operators used to do basic arithmetic (hence the name).
 
 ##### Shortcuts
 
-For addition, subtraction, multiplication and division there is a shortcut if you 
+Many of the operations you are doing are going to involve taking the original value of a variable doing an operation and storing the result back in the variable. For example: 
+
+```python
+variable_1 = 5 # Initialize the variable to 5
+
+variable_1 = variable_1 + 5 # Take the current value of the variable and add 5
+
+variable_1 = variable_1 - 5 # Take the current value of the variable and subtract 5
+
+variable_1 = variable_1 / 2 # Take the current value of the variable and floating point divide by 2
+
+variable_1 = variable_1 // 2 # Take the current value of the variable and integer divide by 2
+```
+
+
+
+For addition, subtraction, multiplication and division there is a shortcut to do the above operations. The general form is ```variable_name <operator>= value```
+
+```python
+variable_1 = 5 # Initialize the variable to 5
+
+variable_1 += 5 # Take the current value of the variable and add 5
+
+variable_1 -= 5 # Take the current value of the variable and subtract 5
+
+variable_1 /= 2 # Take the current value of the variable and floating point divide by 2
+
+variable_1 //= 2 # Take the current value of the variable and integer divide by 2
+```
 
 
 
