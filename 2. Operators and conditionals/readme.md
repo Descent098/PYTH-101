@@ -75,19 +75,69 @@ my_list = my_list + name # Adding the current my_list variable to the string nam
 print(my_list) # Prints: ['j','o','h','n']
 ```
 
-Now this ^^ is weird, the reason is that strings are actually lists of characters, and so as we saw before they are *concatenated* together.
+Now this ^^ is weird, the reason is that strings are actually lists of **individual characters**, and so as we saw before they are *concatenated* together.
 
 
 
 ##### Subtraction
 
-...
+Just like addition, subtraction is somewhat boring the syntax for it is pretty simple:
+
+```python
+print(5 - 3) # Prints: 2
+
+# You can also use variables
+
+value = 5 - 8
+
+print(value) # Prints -3
+
+# You can also use variables in place of numbers
+
+value_2 = value - 6 
+
+print(value_2) # Prints: -9
+```
+
+
+
+Unlike addition there are no fun tricks with it though, subtracting from a string or list will just give you an error. 
 
 
 
 ##### Multiplication
 
-...
+Now multiplication is back to getting weird. First lets get the simple syntax down: 
+
+```python
+print(5 * 3) # Prints: 15
+
+# You can also use variables
+
+value = 5 * 8 
+
+print(value) # Prints 40
+
+# You can also use variables in place of numbers
+
+value_2 = value * 6
+
+print(sum_2) # Prints: 120
+```
+
+
+
+Now for the weird part, with lists and strings you can multiply them, and the results are very fun...
+
+```python
+my_list = [1,2,3,4] # Initialize my_list
+
+my_list = my_list * 3 # Take my_list and multiply it by 3
+
+print(my_list) # Prints: [1,2,3,4,1,2,3,4,1,2,3,4]
+```
+
+As you can see, when you multiply a list (or string) by a number, it *concatenates* the value of the list (or string) the number of times you multiply it by. So in this case since the list is multiplied by 3, the value of the list is present 3 times in a row.
 
 
 
