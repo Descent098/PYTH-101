@@ -143,7 +143,57 @@ As you can see, when you multiply a list (or string) by a number, it *concatenat
 
 ##### Division
 
-...
+And going back to the boring we have division, division has no special uses, but it does have 2 forms integer and floating point division.
+
+
+
+###### Floating Point Division
+
+This is your typical division, it will **always** return a float. The syntax is as follows:
+
+```python
+print(5 / 2) # Prints: 2.5
+
+# You can also use variables
+
+value = 5 / 3
+
+print(value) # Prints 1.6666666666666667
+
+# You can also use variables in place of numbers
+
+value_2 = value / 2 
+
+print(value_2) # Prints: 0.8333333333333334
+```
+
+
+
+###### Integer Division
+
+This sort of division will **always** return an int. If your value comes out to a float (anything with a decimal) then it *takes the floor* of the division (always rounds down even if above 0.5).
+
+
+
+The syntax for integer division is pretty simple:
+
+```python
+print(5 // 3) # Prints: 1
+
+# You can also use variables
+
+value = 5 // 8
+
+print(value) # Prints 0 (Remember it ALWAYS rounds down)
+
+# You can also use variables in place of numbers
+
+value_2 = value // 6 
+
+print(value_2) # Prints: 0
+```
+
+
 
 
 
@@ -183,45 +233,160 @@ variable_1 //= 2 # Take the current value of the variable and integer divide by 
 
 ##### Modulus
 
-What this actually does is returns the **remainder** to the division of the two terms.
+What this actually does is returns the **remainder** to the division of the two terms. This is not commonly used other than to check if something is *evenly divisible* by another number. This is because if a number is divisible by another then the **modulus** will be 0:
+
+```python
+print(5 % 3) # Prints: 2
+
+# You can also use variables
+
+value = 10 % 5
+
+print(value) # Prints 0 (Therefore 10 is evenly divisible by 5)
+
+# You can also use variables in place of numbers
+
+value_2 = value % 6 
+
+print(value_2) # Prints: 0 (Because 0/anything is always 0)
+```
+
+
+
+Note that this is an incredibly slow way to do this check, but it is used often enough that it's worth learning.
 
 
 
 #### Logical operators
 
-...
+Logical operators are symbols that are used to make comparisons between values. They all return *Boolean* values when used (True or False), and are useful especially when combined with *if statements* (explained later).  All of these comparisons can be made with int's or float's
+
+
 
 ##### Greater than
+
+Used to check if a value is larger than another value:
+
+```python
+print(5 > 3) # Prints: True; since 5 is greater than 3
+
+result = 5 > 3 # You can store the result in a variable
+
+print(result) # Prints: True
+
+print(3 > 5) # Prints: False; since 3 is NOT greater than 5
+
+print(5 > 5) # Prints: False; since 5 is NOT greater than 5 (they are equal)
+```
 
 
 
 ##### Greater than or equal to
 
+Used to check if a value is larger than **or** equal to another value:
+
+```python
+print(5 >= 3) # Prints: True; since 5 is greater than 3
+
+result = 5 >= 3 # You can store the result in a variable
+
+print(result) # Prints: True
+
+print(3 >= 5) # Prints: False; since 3 is NOT greater than 5
+
+print(5 >= 5) # Prints: True; since 5 is equal to 5
+```
+
 
 
 ##### Less than
+
+Used to check if a value is smaller than another value:
+
+```python
+print(5 < 3) # Prints: False; since 5 is NOT less than 3
+
+result = 5 < 3 # You can store the result in a variable
+
+print(result) # Prints: False
+
+print(3 < 5) # Prints: True; since 3 is less than 5
+
+print(5 < 5) # Prints: False; since 5 is NOT less than 5 (they are equal)
+```
 
 
 
 ##### Less than or equal to
 
+Used to check if a value is smaller than **or** equal to another value:
+
+```python
+print(5 <= 3) # Prints: False; since 5 is NOT less than OR equal to 3
+
+result = 5 <= 3 # You can store the result in a variable
+
+print(result) # Prints: False
+
+print(3 <= 5) # Prints: True; since 3 is less than 5
+
+print(5 <= 5) # Prints: True; since 5 is equal to 5
+```
 
 
 
-
-#### Bitwise operators
+##### Not
 
 ...
 
 
 
+##### And
+
+...
+
+
+
+##### Or
+
+...
+
+
+
+##### In
+
+...
+
+
+
+#### Bitwise operators
+
+**DISCLAIMER: If you are new to programming feel free to skip on to [conditionals](#conditionals) as this section won't be relevant for you.** 
+
+
+
+For anyone who has used lower level languages bitwise operators are available in python (binary AND, OR, XOR, Ones Compliment, Left and Right shifts). I am not going to go into detail, but if you are interested here is the syntax:
+
+[Chart taken from here]( https://www.tutorialspoint.com/python/bitwise_operators_example.htm )
+
+| Operator | Description                                                  | Example                                                      |
+| -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| &        | Binary AND: Operator copies a bit to the result if it exists in both operands | (a & b) (means 0000 1100)                                    |
+| \|       | Binary OR: It copies a bit if it exists in either operand.   | (a \| b) = 61 (means 0011 1101)                              |
+| ^        | Binary XOR: It copies the bit if it is set in one operand but not both. | (a ^ b) = 49 (means 0011 0001)                               |
+| !        | Binary Ones Complement: It is unary and has the effect of 'flipping' bits. | (~a ) = -61 (means 1100 0011 in 2's complement form due to a signed binary number. |
+| <<       | Binary Left Shift: The left operands value is moved left by the number of bits specified by the right operand. | a << 2 = 240 (means 1111 0000)                               |
+| \>>      | Binary Right Shift: The left operands value is moved right by the number of bits specified by the right operand. | a \>> 2 = 15 (means 0000 1111)                               |
+
 
 
 ## Conditionals
 
-
-
 ### if, else, and elif statements
+
+
+
+
 
 #### if
 
