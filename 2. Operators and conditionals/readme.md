@@ -337,13 +337,40 @@ print(5 <= 5) # Prints: True; since 5 is equal to 5
 
 ##### Not
 
-...
+Not is an operand that flips the Boolean value of what follows; So something that would be True will be False and something that is False would be True. The syntax is ```not <boolean>``` here is an example:
+
+```python
+print(not 5 < 3) # Prints: True; since the statement 5 < 3 evaluates to False
+
+result = not 5 < 3 # You can store the result in a variable
+
+print(result) # Prints: True
+
+print(not 3 < 5) # Prints: False; Since the statement 3 < 5 evaluates to True
+```
 
 
 
 ##### And
 
-...
+The and operand takes two Boolean values, if they are both True it will return True, otherwise it is always False. The syntax is ```<boolean> and <boolean>``` for example:
+
+```python
+print(5 < 3 and 8 > 6) # Prints: True; since both statements evaluate to True
+
+print(5 > 3 and 8 > 6) # Prints: False; since the first statement evaluates to False
+```
+
+I have provided a table below which will tell you how this works in all situations, these tables are called *truth tables* and they are quite useful. Assume that *a* and *b* are placeholders for statements that evaluate to True or false.
+
+
+
+| a     | b     | a and b | Example               |
+| ----- | ----- | ------- | --------------------- |
+| True  | True  | True    | ```5 < 3 and 8 > 6``` |
+| False | True  | False   | ```8 > 6 and 5 > 3``` |
+| True  | False | False   | ```5 > 3 and 8 > 6``` |
+| False | False | False   | ```5 < 3 and 8 > 6``` |
 
 
 
