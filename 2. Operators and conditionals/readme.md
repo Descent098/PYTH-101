@@ -4,21 +4,31 @@
 
 ## Operators
 
+
+
 Operators are symbols built into python that allow for special functionality such as addition, subtraction and
 
 
 
 #### Arithmetic operators
 
+
+
 Arithmetic operators are operators used to do basic arithmetic (hence the name). What this means is that they are the basis for any calculations you need to make in a program. Most of these will be pretty obvious so I will try and make it more interesting by telling you some of the usefulness (weirdness) you wouldn't expect out of them, as well as some use cases.
 
-<img src="../Images/Memes/calculation.jpg" alt="calculation" style="zoom:67%;" />
+
+
+<img src="../Images/Memes/basic-math.jpg" alt="basic-math" style="zoom:67%;" />
 
 
 
 ##### Addition
 
+
+
 This should be pretty basic and boring, in fact you have already seen it before, but for the sake of completeness, here is how to do addition in python:
+
+
 
 ```python
 print(5 + 3) # Prints: 8
@@ -36,7 +46,11 @@ sum_2 = 6 + sum_value
 print(sum_2) # Prints: 14 
 ```
 
+
+
 Well that was boring, **but**... there are more interesting things you can do with addition. For example, if you have multiple lists you can actually add them together to combine the two (order matters):
+
+
 
 ```python
 my_list = [1,2,3,4] # Initialize my_list
@@ -55,6 +69,8 @@ As you can see in the above example, when the my_list_2 variable is added to the
 
 Here is where things get weird, if you recall in the first challenge (yes you should do those), I mentioned that strings are **like** lists. This means operands also work on strings:
 
+
+
 ```python
 name = "Hello " # Set name variable to an string 'hello '
 
@@ -63,7 +79,11 @@ name = name + "World!" # Take the current name value and add 'world' to it
 print(name) # Prints: Hello World!
 ```
 
+
+
 Just a heads up combining these properties together gives some interesting effects that I won't go into detail with, but I will show you. For example if you add a string and a list: 
+
+
 
 ```python
 my_list = [] # Initialize an empty list
@@ -75,13 +95,19 @@ my_list = my_list + name # Adding the current my_list variable to the string nam
 print(my_list) # Prints: ['j','o','h','n']
 ```
 
+
+
 Now this ^^ is weird, the reason is that strings are actually lists of **individual characters**, and so as we saw before they are *concatenated* together.
 
 
 
 ##### Subtraction
 
+
+
 Just like addition, subtraction is somewhat boring the syntax for it is pretty simple:
+
+
 
 ```python
 print(5 - 3) # Prints: 2
@@ -107,7 +133,11 @@ Unlike addition there are no fun tricks with it though, subtracting from a strin
 
 ##### Multiplication
 
+
+
 Now multiplication is back to getting weird. First lets get the simple syntax down: 
+
+
 
 ```python
 print(5 * 3) # Prints: 15
@@ -129,6 +159,8 @@ print(sum_2) # Prints: 120
 
 Now for the weird part, with lists and strings you can multiply them, and the results are very fun...
 
+
+
 ```python
 my_list = [1,2,3,4] # Initialize my_list
 
@@ -137,11 +169,15 @@ my_list = my_list * 3 # Take my_list and multiply it by 3
 print(my_list) # Prints: [1,2,3,4,1,2,3,4,1,2,3,4]
 ```
 
+
+
 As you can see, when you multiply a list (or string) by a number, it *concatenates* the value of the list (or string) the number of times you multiply it by. So in this case since the list is multiplied by 3, the value of the list is present 3 times in a row.
 
 
 
 ##### Division
+
+
 
 And going back to the boring we have division, division has no special uses, but it does have 2 forms integer and floating point division.
 
@@ -149,7 +185,11 @@ And going back to the boring we have division, division has no special uses, but
 
 ###### Floating Point Division
 
+
+
 This is your typical division, it will **always** return a float. The syntax is as follows:
+
+
 
 ```python
 print(5 / 2) # Prints: 2.5
@@ -171,11 +211,15 @@ print(value_2) # Prints: 0.8333333333333334
 
 ###### Integer Division
 
+
+
 This sort of division will **always** return an int. If your value comes out to a float (anything with a decimal) then it *takes the floor* of the division (always rounds down even if above 0.5).
 
 
 
 The syntax for integer division is pretty simple:
+
+
 
 ```python
 print(5 // 3) # Prints: 1
@@ -195,11 +239,13 @@ print(value_2) # Prints: 0
 
 
 
-
-
 ##### Shortcuts
 
+
+
 Many of the operations you are doing are going to involve taking the original value of a variable doing an operation and storing the result back in the variable. For example: 
+
+
 
 ```python
 variable_1 = 5 # Initialize the variable to 5
@@ -217,6 +263,8 @@ variable_1 = variable_1 // 2 # Take the current value of the variable and intege
 
 For addition, subtraction, multiplication and division there is a shortcut to do the above operations. The general form is ```variable_name <operator>= value```
 
+
+
 ```python
 variable_1 = 5 # Initialize the variable to 5
 
@@ -233,7 +281,11 @@ variable_1 //= 2 # Take the current value of the variable and integer divide by 
 
 ##### Modulus
 
+
+
 What this actually does is returns the **remainder** to the division of the two terms. This is not commonly used other than to check if something is *evenly divisible* by another number. This is because if a number is divisible by another then the **modulus** will be 0:
+
+
 
 ```python
 print(5 % 3) # Prints: 2
@@ -257,7 +309,13 @@ Note that this is an incredibly slow way to do this check, but it is used often 
 
 
 
+<img src="../Images/Memes/calculation.jpg" alt="calculation" style="zoom:67%;" />
+
+
+
 #### Logical operators
+
+
 
 Logical operators are symbols that are used to make comparisons between values. They all return *Boolean* values when used (True or False), and are useful especially when combined with *if statements* (explained later).  All of these comparisons can be made with int's or float's
 
@@ -265,7 +323,11 @@ Logical operators are symbols that are used to make comparisons between values. 
 
 ##### Greater than
 
+
+
 Used to check if a value is larger than another value:
+
+
 
 ```python
 print(5 > 3) # Prints: True; since 5 is greater than 3
@@ -283,7 +345,11 @@ print(5 > 5) # Prints: False; since 5 is NOT greater than 5 (they are equal)
 
 ##### Greater than or equal to
 
+
+
 Used to check if a value is larger than **or** equal to another value:
+
+
 
 ```python
 print(5 >= 3) # Prints: True; since 5 is greater than 3
@@ -301,7 +367,11 @@ print(5 >= 5) # Prints: True; since 5 is equal to 5
 
 ##### Less than
 
+
+
 Used to check if a value is smaller than another value:
+
+
 
 ```python
 print(5 < 3) # Prints: False; since 5 is NOT less than 3
@@ -319,7 +389,11 @@ print(5 < 5) # Prints: False; since 5 is NOT less than 5 (they are equal)
 
 ##### Less than or equal to
 
+
+
 Used to check if a value is smaller than **or** equal to another value:
+
+
 
 ```python
 print(5 <= 3) # Prints: False; since 5 is NOT less than OR equal to 3
@@ -337,7 +411,11 @@ print(5 <= 5) # Prints: True; since 5 is equal to 5
 
 ##### Not
 
+
+
 Not is an operand that flips the Boolean value of what follows; So something that would be True will be False and something that is False would be True. The syntax is ```not <boolean>``` here is an example:
+
+
 
 ```python
 print(not 5 < 3) # Prints: True; since the statement 5 < 3 evaluates to False
@@ -353,13 +431,19 @@ print(not 3 < 5) # Prints: False; Since the statement 3 < 5 evaluates to True
 
 ##### And
 
+
+
 The and operand takes two Boolean values, if they are both True it will return True, otherwise it is always False. The syntax is ```<boolean> and <boolean>``` for example:
+
+
 
 ```python
 print(5 < 3 and 8 > 6) # Prints: True; since both statements evaluate to True
 
 print(5 > 3 and 8 > 6) # Prints: False; since the first statement evaluates to False
 ```
+
+
 
 I have provided a table below which will tell you how this works in all situations, these tables are called *truth tables* and they are quite useful. Assume that *a* and *b* are placeholders for statements that evaluate to True or false.
 
@@ -376,17 +460,68 @@ I have provided a table below which will tell you how this works in all situatio
 
 ##### Or
 
-...
+
+
+The *or* operand takes two Boolean values, if **either**  are True it will return True, if **both** are False it will return False. The syntax is ```<boolean> or<boolean>``` for example:
+
+
+
+```python
+print(5 < 3 or 8 > 6) # Prints: True; since both statements evaluate to True
+
+print(5 > 3 or 8 > 6) # Prints: True; since the second statement evaluates to True
+```
+
+
+
+Here is the truth table for the or operator:
+
+
+
+| a     | b     | a or b | Example              |
+| ----- | ----- | ------ | -------------------- |
+| True  | True  | True   | ```5 < 3 or 8 > 6``` |
+| False | True  | True   | ```8 > 6 or 5 > 3``` |
+| True  | False | True   | ```5 > 3 or 8 > 6``` |
+| False | False | False  | ```5 < 3 or 8 > 6``` |
 
 
 
 ##### In
 
-...
+
+
+The *in* operator is as far as I know one that is specific to python (and really useful). It takes two operands one being a value (int, string etc.) and the other being a collection of some sort (list, string).  The operator will return True if the value is in the collection, for example lets say you wanted to check if a name taken from the command line is john, the code would look like this:
+
+
+
+```python
+name = input("Enter name: ") # Take someones name from the command line
+
+print("john" in name) # Prints: True if john is name given, or False otherwise
+```
+
+
+
+Another example would be checking if a list contains a specific int:
+
+
+
+```python
+print(4 in [1,2,3]) # Prints: False since no 4 is present in the list
+
+print(4 in [1,2,3,4]) # Prints: True since 4 is present in the list
+```
+
+
+
+<img src="../Images/Memes/operators.jpg" alt="operators" style="zoom:67%;" />
 
 
 
 #### Bitwise operators
+
+
 
 **DISCLAIMER: If you are new to programming feel free to skip on to [conditionals](#conditionals) as this section won't be relevant for you.** 
 
@@ -394,7 +529,7 @@ I have provided a table below which will tell you how this works in all situatio
 
 For anyone who has used lower level languages bitwise operators are available in python (binary AND, OR, XOR, Ones Compliment, Left and Right shifts). I am not going to go into detail, but if you are interested here is the syntax:
 
-[Chart taken from here]( https://www.tutorialspoint.com/python/bitwise_operators_example.htm )
+
 
 | Operator | Description                                                  | Example                                                      |
 | -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -407,7 +542,17 @@ For anyone who has used lower level languages bitwise operators are available in
 
 
 
+[Chart taken from here]( https://www.tutorialspoint.com/python/bitwise_operators_example.htm )
+
+
+
 ## Conditionals
+
+
+
+Conditional statements are a statement that takes a logical operator and executes code if the operator is True.
+
+
 
 ### if, else, and elif statements
 
@@ -417,13 +562,23 @@ For anyone who has used lower level languages bitwise operators are available in
 
 #### if
 
+
+
 ...
+
+
 
 #### else
 
+
+
 ....
 
+
+
 #### elif
+
+
 
 ...
 
@@ -431,10 +586,19 @@ For anyone who has used lower level languages bitwise operators are available in
 
 ### While and break statements
 
+
+
 #### While
 
+
+
 ...
+
+
 
 #### break
 
+
+
 ...
+
