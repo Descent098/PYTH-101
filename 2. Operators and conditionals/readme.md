@@ -6,7 +6,7 @@
 
 
 
-Operators are symbols built into python that allow for special functionality such as addition, subtraction and
+Operators are symbols built into python that allow for special functionality such as addition, subtraction, and validation.
 
 
 
@@ -555,8 +555,6 @@ Conditional statements are a statement that takes a logical operator and execute
 
 
 ### if, else, and elif statements
-
-
 
 
 
