@@ -550,7 +550,7 @@ For anyone who has used lower level languages bitwise operators are available in
 
 
 
-Conditional statements are a statement that takes a logical operator and executes code if the operator is True.
+Conditional statements are a statement that takes a logical operator and executes code if the operator is True. Technically this is also a part of control flows so I will just show you one of what's to come in the next module.
 
 
 
@@ -562,7 +562,53 @@ Conditional statements are a statement that takes a logical operator and execute
 
 
 
-...
+This conditional is exactly how it sounds, **if** some operator or boolean is True then **do something**. The syntax for this statement looks something like this: 
+
+
+
+```python
+if condition:
+	# Do stuff at this indentation level
+```
+
+
+
+You'll notice a few things about this:
+
+1. first you need to put a colon after your if statement; This is because you can combine statements together (I will show this later), so the colon is there to say "This if statement is complete".
+2. After the colon you will need to *indent* all the code you want to run by **at least one space or tab** (Typical convention is 4 spaces or 1 tab); This tells python which code you want to run if the condition is True, and which to run regardless of if the statement is True.
+
+
+
+So for example lets say you have a number (*x*) and **if** x < 3 you want to **add 2 to it**, and **no matter what** the value of x is you want to **print x** the code looks like this:
+
+```python
+x = 2 # Setting up the x variable
+
+if x < 3:
+    x += 2 # This will run if x < 3, otherwise it will be skipped over
+
+print(X) # Since this is on a lower indentation level, this code will run regardless
+
+if x < 3:
+    x += 2 # This will run if x < 3, otherwise it will be skipped over
+    
+print(X) # Since this is on a lower indentation level, this code will run regardless
+```
+
+
+
+Try to figure out what happens without reading my explanation below, once you have a guess, keep reading.
+
+
+
+What happens in the example:
+
+1. Setting up a variable called x, which is set to 2
+2. Because at this point x < 3 the code will add 2 to the current value of x, making it 4
+3. Since the value of x is 4 the print statement will print 4
+4. Since x is now **not** less than 3 nothing will be added to the value
+5. Since the value of x is still 4 the print statement will print 4
 
 
 
@@ -570,7 +616,58 @@ Conditional statements are a statement that takes a logical operator and execute
 
 
 
-....
+else statements are used in conjunction with if statements. They allow you to set what should happen if the if statements' condition is False. Here is the syntax: 
+
+```python
+if condition:
+	# Do stuff
+else:
+	# Do different stuff (Only happens if the above if statement condition is False)
+```
+
+
+
+Modifying the earlier example, let's setup two sets of if-else statements in which if x < 3 we take the current x value and add 2 to it, otherwise (else) subtract 1. Here is the code: 
+
+
+
+```python
+x = 2 # Setting up the x variable
+
+if x < 3:
+    x += 2 # This will run if x < 3, otherwise it will be skipped over
+else:
+    x -= 1 # This will run if x is not less than 3
+
+print(X) # Since this is on a lower indentation level, this code will run regardless
+
+if x < 3:
+    x += 2 # This will run if x < 3, otherwise it will be skipped over
+else:
+    x -= 1 # This will run if x is not less than 3
+    
+print(X) # Since this is on a lower indentation level, this code will run regardless
+```
+
+
+
+Try to figure out what happens without reading my explanation below, once you have a guess, keep reading.
+
+
+
+What happens in the example:
+
+1. Setting up a variable called x, which is set to 2
+2. Because at this point x < 3 the code will add 2 to the current value of x, making it 4
+3. Since the value of x is 4 the print statement will print 4
+4. Since x is now **not** less than 3 the else statement is invoked and x has a 1 subtracted from it
+5. Since the value of x is now 3 the print statement will print 3
+
+
+
+![else-ifn't](../Images/Memes/else-ifn't.png)
+
+[source]( https://www.instagram.com/p/BzmoOn8j6Kp/?utm_source=ig_web_copy_link )
 
 
 
@@ -578,25 +675,51 @@ Conditional statements are a statement that takes a logical operator and execute
 
 
 
-...
+elif statements are a way to chain if statements. For example lets say you had 4 conditions you wanted to check for you could combine them together using logical operators, or to make it more legible you could have 4 different elif statements.
 
 
 
-### While and break statements
+The syntax is as follows: 
+
+```python
+if conidion: # You MUST have an initial if statement to use an elif statement
+	# Do stuff
+
+elif condition_2:
+	# Do other stuff
+	
+else: # This is optional, but useful if you want a catch-all condition
+	# Do other other stuff
+```
 
 
 
-#### While
+Let's take a more realistic example, let's say you wanted to make a program that takes in input from the command line and then if it is a value between 1 and 5, print the text version of the number (i.e. 5 would print "Five"). Here is the code:
 
 
 
-...
+```python
+user_value = int(input("Enter a number between 0 and 5: "))
 
+if user_value == 0:
+	print("Zero")
 
+elif user_value == 1:
+    print("One")
 
-#### break
+elif user_value == 2:
+    print("Two")
 
+elif user_value == 3:
+    print("Three")
+    
+elif user_value == 4:
+    print("Four")
 
+elif user_value == 5:
+    print("Five")
 
-...
+else: # If value is not between 0 and 5
+    print("Value provided is not between 0 and 5!")
+```
 
