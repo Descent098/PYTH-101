@@ -1,10 +1,4 @@
-```comming soon```
-
-### While and break statements
-
-
-
-#### while
+# Control Flows & Loops
 
 
 
@@ -12,7 +6,7 @@
 
 
 
-#### break
+## Control Flows
 
 
 
@@ -20,11 +14,40 @@
 
 
 
-#### continue
+## Loops
 
 
 
+...
 
 
 
+### while
 
+
+
+A *while* loop is exactly as it sounds, it **loops** will continue **until** the condition is **False**. 
+
+
+
+### For
+
+
+
+...
+
+
+
+### break
+
+
+
+...
+
+
+
+### continue
+
+
+
+...
