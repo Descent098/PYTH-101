@@ -34,6 +34,8 @@ A: I would never suggest you don't learn many languages (I have learned the ones
 
 Markdown files (files that end in .md) are intended to be read in a markdown viewer. The easiest way to read the readme's in each folder is to keep https://github.com/Descent098/PYTH-101 open in github and navigate to each folder. Github has a built in markdown viewer that will let you read the files in their intended format right on your webpage.
 
+
+
 ## Structure
 
 ```
@@ -82,3 +84,30 @@ A set of smaller exercises that are intended to gear you up for ```challenge.py`
 ### challenge.py
 
 A challenge on the topic of the folder, intended to be completed last.
+
+
+
+## Other Courses & Resources
+
+
+
+I do also have other courses in python:
+
+```
+                        +----------+
+                        | PYTH 101 |
+                        +----+-----+
+                             |
+                             |
+                             v
+                        +----+-----+
+                        | PYTH 202 | (Still a work in progress)
+                        +----+-----+
+                             |
+                             |
+                             v
+                        +----+-----+
+                        | PYTH 303 | (Still a work in progress)
+                        +----------+
+```
+
