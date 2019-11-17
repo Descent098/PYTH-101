@@ -51,7 +51,7 @@ Markdown files (files that end in .md) are intended to be read in a markdown vie
 |   ├── challenge.py
 |   ├── exercises.py
 |   └── readme.md
-├── 3. Control Flows
+├── 3. Loops
 |   ├── challenge.py
 |   ├── exercises.py
 |   └── readme.md
