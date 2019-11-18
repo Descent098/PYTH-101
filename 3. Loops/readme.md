@@ -52,17 +52,23 @@ For loops are a bit more complicated than while loops. They loop based on *itera
 
 The basic syntax of a for loop looks like this:
 
+
+
 ```python
 for variable in iterable:
 	# Code at this indentation executes during the iteration
 # Code at this indentation does stuff after the loop
 ```
 
+
+
 Where variable is an arbitrarily named variable used to hold the current value of the iteration, and iterable is the item to iterate over.
 
 
 
 Let's take the example of a shopping list and say you wanted to loop through the values in the list and print them off one by one, you could use a for loop to do this:
+
+
 
 ```python
 shopping_list = ["Eggs", "Ham", "Milk"]
@@ -74,6 +80,8 @@ for item in shopping_list: # Iterate through the shopping list
 
 
 This would print:
+
+
 
 ```python
 >> Eggs
@@ -87,7 +95,22 @@ This would print:
 
 
 
-...
+The break statement is used to end a loop immediately. It can (but does not have to) be used with if/elif/else statements to force a loop to stop iterating if a condition is met.
+
+
+
+Let's take the example that we want to create a for loop that print's out each letter of a string, but if the string contains a hyphen (-) then we want the loop to end. The code would look like this:
+
+```python
+greeting = "Hello-World" # Setting up a string to iterate through
+
+for character in greeting: # Iterate over the string one letter at a time
+	if "-" in character: # if the current character is a hyphen
+		print("Hyphen detected, ending loop!")
+		break # End the loop
+	else:
+		print(character) # Print the current character
+```
 
 
 
@@ -95,4 +118,18 @@ This would print:
 
 
 
-...
+Continue statements are used to jump to the next iteration. So for example let's say you wanted to print the even numbers from 0-10 using a while loop, you could do it like this:
+
+
+
+```python
+x = 0 # Initialize a variable to use in the condition
+
+while x < 10:
+	if ((x % 2) == 0): # If the number is even
+		print(x)
+		
+	else: # If the number is odd
+		continue # Go to next iteration
+```
+
