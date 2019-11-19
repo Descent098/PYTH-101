@@ -133,3 +133,55 @@ while x < 10:
 		continue # Go to next iteration
 ```
 
+
+
+### Loop Tricks and Techniques
+
+
+
+Here are some additionally useful things you can do with loops, as well as things to avoid.
+
+
+
+#### Infinite Loops
+
+
+
+When you are making a *while* loop, inevitably you will create a loop that never ends. Some languages stop you from doing this, python is not one of them. If you create a loop that wont stop, you can force the program to stop running by pressing ctrl+c on windows or cmd+c on mac.
+
+
+
+#### Loop Nesting
+
+
+
+You can execute loops inside of loops, this is useful in many cases. A good real world example is that some people will put lists inside lists, or dictionaries inside dictionaries. Here is an example of going through a list of shopping lists:
+
+
+
+```python
+shopping_lists = [["Eggs", "Milk", "Ham"], 
+                  ["Vinegar", "Mustard", "Ketchup"], 
+                  ["Burgers", "Lettuce", "Mayo"]]
+
+for current_list in shopping_lists: # Steps through the list of lists
+    for item in current_list: # Steps through each list
+        print(item) # Prints the item in the current shopping list
+```
+
+
+
+This prints:
+
+```python
+Eggs
+Milk
+Ham
+Vinegar
+Mustard
+Ketchup
+Burgers
+Lettuce
+Mayo
+```
+
