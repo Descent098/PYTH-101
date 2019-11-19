@@ -185,3 +185,83 @@ Lettuce
 Mayo
 ```
 
+
+
+#### Using loops for Validation
+
+
+
+You can use a loop to validate input from a user. For example let's say you needed the user to input a number between 1-10, you could force them to do this in a loop like this:
+
+
+
+```python
+while True: # This is an infinite loop
+  number = int(input("Please type a number between 1 and 10: ")) # Take user input
+  
+  if number < 1: # Number is too small
+    print("Number provided is less than 1")
+  
+  if number > 10: # Number is too large
+    print("Number provided is greater than 10")
+  
+  else: # If the input is in a valid range
+    break # End the loop
+```
+
+
+
+There is another way to do this syntactically (which I prefer):
+
+
+
+```python
+valid_input = False # Used to mark if input is valid
+
+while not valid_input: # Loop when valid input is False
+  number = int(input("Please type a number between 1 and 10: ")) # Take user input
+  
+  if number < 1: # Number is too small
+    print("Number provided is less than 1")
+  
+  if number > 10: # Number is too large
+    print("Number provided is greater than 10")
+  
+  else: # If the input is in a valid range
+    valid_input = True # End the loop
+```
+
+
+
+The only reason I perfer the way above is because if you forget to comment your code the above example is easier to read.
+
+
+
+#### for loops over a set range
+
+
+
+It is possible to create for loops that will loop for a specific range of numbers (i.e. 2-8). Let's take the example of looping from 5-10:
+
+
+
+```python
+for number in range(5,11):
+    print(number)
+```
+
+
+
+The range() function takes two arguments: The first is the number to start at, and the second is the number to end on.  Also keep in mind the end number needs to be 1 more than the value you want to end on (most people use this for lists so this ensures that you don't go past the range of the list).
+
+
+
+You can also opt to just specify an end number and the loop will start by default at 0. For example 0-10 would be:
+
+
+
+```python
+for number in range(11):
+    print(number)
+```
+
