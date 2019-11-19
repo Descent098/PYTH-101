@@ -46,7 +46,7 @@ print("loop Finished") # This will execute after the loop since it's at a lower 
 
 
 
-For loops are a bit more complicated than while loops. They loop based on *iterables*, which are things in python that you can *iterate over*. Collections such as lists, and tuples (and even strings) are examples of *iterables*.
+For loops are a bit more complicated than while loops. They loop based on *iterables*, which are things in python that you can *iterate over*. Collections such as lists, and tuples (and even strings) are examples of *iterables*. The *terminating condition* during for loops is when you hit the end of the iterable (i.e. the last element in a list).
 
 
 
