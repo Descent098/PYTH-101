@@ -52,8 +52,20 @@ number = random.randint() # Generates a random number
     8
     9
 
-    HINT: The simplest (and shortest) way to do this
-    is with a loop counter variable, and a while loop.
+    HINTS:
+    1. The pattern is that the list is in order where the
+        same index on each list is in ascending order.
+        i.e. 
+        numbers[0][0] is 1
+        numbers[1][0] is 2
+        numbers[2][0] is 3
+        etc.
+    2. The simplest (and shortest) way to do this
+        is with a loop counter variable, and a while loop.
 """
 
-numbers = [[1, 4, 7], [2 ,5, 8], [3, 6, 9]]
+numbers = [
+    [1, 4, 7],
+    [2 ,5, 8],
+    [3, 6, 9]
+]
