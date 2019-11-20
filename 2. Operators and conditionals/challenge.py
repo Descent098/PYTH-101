@@ -23,3 +23,36 @@
     
     Hint: You should have between 6-7 if/elif/else statements
 """
+
+"""
+    =========== Challenge 3 =============
+
+    There are functions in python that can be used
+    to determine if strings contain certain characters.
+    
+    For example the function isdigit() returns True if
+    ALL the characters in the string are digits. Here
+    is an example of it's usage:
+        
+        numbers = "1234567"
+        letters = "Hello 4"
+        
+        print(numbers.isdigit()) # prints True
+        print(letters.isdigit()) # prints False
+     
+     There are two other similar functions called endswith()
+     and islower(). 
+     
+     endswith() takes a string as an argument
+     and returns true if the string it's being used on ends with
+     the string provided.
+     
+     islower() returns true if the string provided is all lowercase
+     
+     Now take input at the command line, and using if statements print
+     the following statements if conditions are met:
+        1. if the string is all numbers print "All numbers"
+        2. If the string is all lowercase print "All lowercase"
+        3. If the string ends with "yes" print "Ends in yes"
+        Otherwise print "None of the conditions have been met"
+"""
