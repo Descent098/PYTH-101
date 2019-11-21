@@ -2,7 +2,9 @@
 
 The purpose of this repository is to go through each set of exercises sequentially to help you learn python. Once you have finished reading this file you can start from ```0. Basic syntax and additional course information``` to get the ball rolling.
 
+## Python Versions
 
+It is worth mentioning that this course is developed for python 3, as of writing this python 2 is still heavily used. It's not a differenceee that affects most things, but keep it in mind when googling questions.
 
 ## Why Python?
 
