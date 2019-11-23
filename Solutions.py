@@ -55,7 +55,11 @@ while x <= end:
 
 # This one is pretty hard, in the video for this lesson I explain it in depth.
 
-numbers = [[1,4,7], [2,5,8], [3,6,9]]
+numbers = [
+    [1,4,7],
+    [2,5,8],
+    [3,6,9]
+]
 
 x = 0 # Used to count how many itterations to do
 while x < 3: # Loop while x is less than the number of sublists in numbers
