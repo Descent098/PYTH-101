@@ -67,6 +67,10 @@ Markdown files (files that end in .md) are intended to be read in a markdown vie
 |   ├── challenge.py
 |   ├── exercises.py
 |   └── readme.md
+├── 7. Extras
+|   ├── challenge.py
+|   ├── exercises.py
+|   └── readme.md
 ```
 
 Each folder has a number in ascending order, the challenges & exercises are intended to be completed in this order.
