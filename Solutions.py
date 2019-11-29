@@ -11,19 +11,19 @@
 shopping_list = [] # Fill in with some values
 
 user_input = input("Enter Item: ")
-shopping_list.appent(user_input)
+shopping_list.append(user_input)
 
 user_input = input("Enter Item: ")
-shopping_list.appent(user_input)
+shopping_list.append(user_input)
 
 user_input = input("Enter Item: ")
-shopping_list.appent(user_input)
+shopping_list.append(user_input)
 
 user_input = input("Enter Item: ")
-shopping_list.appent(user_input)
+shopping_list.append(user_input)
 
 user_input = input("Enter Item: ")
-shopping_list.appent(user_input)
+shopping_list.append(user_input)
 
 print(shopping_list) # Print the whole list
 
@@ -109,15 +109,15 @@ shopping_list = [] # Create a variable called shopping list with nothing in it
 # Add 5 items to the shopping list
 
 user_input = input("Enter Item: ")
-shopping_list.appent(user_input)
+shopping_list.append(user_input)
 user_input = input("Enter Item: ")
-shopping_list.appent(user_input)
+shopping_list.append(user_input)
 user_input = input("Enter Item: ")
-shopping_list.appent(user_input)
+shopping_list.append(user_input)
 user_input = input("Enter Item: ")
-shopping_list.appent(user_input)
+shopping_list.append(user_input)
 user_input = input("Enter Item: ")
-shopping_list.appent(user_input)
+shopping_list.append(user_input)
 
 print(shopping_list) # print out the final list
 
@@ -271,7 +271,7 @@ else:
 
 
 
-number = int(input("Please enter a number between 1-5"))
+number = int(input("Please enter a number between 1-5: "))
 
 # These answers are not the only possible answers
 
@@ -329,7 +329,7 @@ else:
         Otherwise print "None of the conditions have been met"
 """
 
-user_input = input("Please enter some text")
+user_input = input("Please enter some text: ")
 
 if user_input.isdigit():
     print("All Numbers")
@@ -379,9 +379,10 @@ amount_to_add = int(input("How many items do you want to add?"))
 
 counter = 0 # A counter to keep track of the number of items that have been added
 
-while counter <= amount_to_add:
+while counter < amount_to_add:
     item = (input("What item would you like to add?: "))
     shopping_list.append(item)
+    counter += 1
 
 print(shopping_list)
 
@@ -405,7 +406,7 @@ print(shopping_list)
 
 import random
 
-number = random.randint() # Generates a random number
+number = random.randint(0, 10) # Generates a random number
 
 correct_guess = False
 
