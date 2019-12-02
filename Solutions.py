@@ -544,3 +544,117 @@ shopping_list = ["eggs", "ham", "sausages"] # A test list to remove an item from
 shopping_list = delete_item(shopping_list, 1) # Should remove 'ham' from the list
 
 print(shopping_list)
+
+"""
+    =========== Challenge 1 =============
+
+    create a function called validate_input(),
+    that takes a string, and returns True if the 
+    following conditions are met, and False if they
+    aren't:
+        1. The input is all lowercase (use variable.islower())
+        2. It doesn't end with 'yeet'
+        3. There are no q's in the input.
+    
+    Hint: if you use a for loop you can see each letter of a
+    string, or the in operator to check for a value in a string.
+"""
+
+user_input = "this is valid"
+user_input_1 = "This has a capital"
+user_input_2 = "this has a yeet"
+user_input_3 = "this has a q"
+
+def validate_input(user_input: str) -> bool:
+    """ Takes a string and validates it against
+    three criteria:
+        1. The input is all lowercase (use variable.islower())
+        2. It doesn't end with 'yeet'
+        3. There are no q's in the input.
+    
+    Parameters
+    ----------
+    user_input:
+        The value to validate.
+    
+    Returns
+    -------
+    True if none of the criteria are met and False
+    if any are.
+    """
+
+    if not user_input.islower():
+        return False
+
+    if user_input.endswith("yeet"):
+        return False
+    
+    if "q" or "Q" in user_input: # Check if q is a letter
+        return False
+    
+    return True # If none of the conditions above are met
+
+print(validate_input(user_input)) # Should be True
+print(validate_input(user_input_1)) # Should be False
+print(validate_input(user_input_2)) # Should be False
+print(validate_input(user_input_3)) # Should be False
+
+"""
+    =========== Challenge 2 =============
+
+    Create two functions (with docstrings):
+     1. add_to_dictionary(): that takes a dictionary,
+        a key, and a value as arguments, then returns
+        the dictionary with the key and value added.
+    2. print_dictionary(): A function that takes a 
+       dictionary as an argument and prints it's
+       keys and values.
+    
+    Hint: If you loop over a dictionary with a for loop
+        each iteration is a key.
+    
+    Extra Hint: Keys are how you access values in a dictionary.
+"""
+
+def add_to_dictionary(dictionary: dict, key: str, value) -> dict:
+    """
+    Adds a value to a dictionary with a given key
+    
+    Parameters
+    ----------
+    dictionary:
+        The dictionary to add the key-value pair to.
+    
+    key:
+        The key to be added for the value to be added.
+    
+    Value:
+        The value to be added for the key to be added.
+
+    Returns
+    -------
+    The dictionary with the key-value added.
+    """
+    dictionary[key] = value
+    return dictionary
+
+def print_dictionary(dictionary: dict):
+    """
+    Prints the keys and values of a dictionary.
+    
+    Parameters
+    ----------
+    dictionary:
+        The dictionary to print.
+    """
+    for key in dictionary:
+        print(key, dictionary[key])
+
+user = {
+    "name": "Kieran Wood",
+    "age" : 21
+}
+
+user = add_to_dictionary(user, "country", "Canada")
+
+print_dictionary(user)
