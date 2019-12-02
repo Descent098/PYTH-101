@@ -2,7 +2,11 @@
 
 Modules are a way of packaging and segmenting code to help with organization. Python comes with a huge selection of modules already built-in called the [python standard library](https://docs.python.org/3/library/). This includes everything from ways to access the computers operating system ([the os module](https://docs.python.org/3/library/os.html)) to random number and choice generators ([the random module](https://docs.python.org/3/library/random.html)),  to even an etch-a-sketch style drawing module called [turtle](https://docs.python.org/3.7/library/turtle.html).
 
-For example, in python there is a math module for doing math operations:
+
+
+## Module imports
+
+In python you can import modules in a few different ways. For example, in python there is a math module for doing math operations:
 
 ```python
 import math # Brings the whole math module in
@@ -30,6 +34,12 @@ print(square_root(4)) # Prints the square root of 4, which is 2
 ```
 
 Modules are essential to building larger applications, but now that you know how to use them let's look at what they actually are. Modules are just plain old python files, buried deep inside the guts of your python installation there is a file called math.py with a function called sqrt().
+
+
+
+## Writing your own modules
+
+There are actually many ways to write your own modules, but the simplest is just to link separate python files together inside the same folder.
 
 Let's assume you have a project that is structured like this:
 
@@ -59,11 +69,23 @@ if __name__ == "__main__":
 
 As you can see you can import 'modules' by using the filename without the .py.
 
-NOTE: this explanation of modules is incredibly simplified, if you are looking at writing your own module to put online please read a more in-depth guide about packaging: https://packaging.python.org/tutorials/packaging-projects/.
+
+
+NOTE: this explanation of modules is incredibly simplified, if you are looking at writing your own module to put online please read a more in-depth guide about packaging: https://packaging.python.org/tutorials/packaging-projects/ (I will also have a section dedicated to writing 'community' modules in PYTH-202).
+
+
 
 ## pip; The python package manager
 
-In python the most popular way of managing modules (sometimes called packages) is with a utility called pip. If you have followed my instructions for installing python you should already have pip installed. You can find out if it's installed by typing ```pip``` or ```pip3``` (linux) into your command line. If you do not have pip installed, please go back and look at the installation instructions in folder 0.
+In python the most popular way of managing modules (sometimes called packages) is with a utility called pip. If you have followed my instructions for installing python you should already have pip installed. You can find out if it's installed by typing ```pip```(windows) or ```pip3``` (linux/mac) into your command line. If you do not have pip installed, please go back and look at the installation instructions in module 0.
+
+
+
+pip allows you to download and run modules that other people have created on pypi (The python package index; I explain more about this later), or install modules that you have created specifically for pip. Using pip you can get access to thousands of modules that do everything from machine learning, to web development, to interfacing with other services. 
+
+
+
+The simplest way to use pip is to just type ```pip install <project name>``` on windows or ```pip3 install <project name>``` on mac/linux.
 
 ### requirements.txt
 

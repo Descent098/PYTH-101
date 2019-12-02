@@ -1,4 +1,4 @@
-# Basic syntax and additional course information
+# Installation and course information
 
 ## Course Goals
 

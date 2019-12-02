@@ -41,11 +41,11 @@ Markdown files (files that end in .md) are intended to be read in a markdown vie
 ## Structure
 
 ```
-├── 0. Basic syntax and additional course information
+├── 0. Installation and course information
 |   ├── challenge.py
 |   ├── exercises.py
 |   └── readme.md
-├── 1. Primitive data types and variables
+├── 1. Variables and Data Types
 |   ├── challenge.py
 |   ├── exercises.py
 |   └── readme.md
@@ -61,11 +61,11 @@ Markdown files (files that end in .md) are intended to be read in a markdown vie
 |   ├── challenge.py
 |   ├── exercises.py
 |   └── readme.md
-├── 5. Modules
+├── 5. Classes
 |   ├── challenge.py
 |   ├── exercises.py
 |   └── readme.md
-├── 6. Classes
+├── 6. Python Modules
 |   ├── challenge.py
 |   ├── exercises.py
 |   └── readme.md

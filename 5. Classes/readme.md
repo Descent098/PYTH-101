@@ -1,4 +1,4 @@
-# 6. Classes
+# Classes
 
 *Since this is such a long and complicated module I have included a glossary at the bottom to help sort things out*
 
@@ -182,7 +182,19 @@ print(leopard_gecko.counter)
 
 As you can see because the variable belongs to the *class* and not the *instance*, it is available to both the class as a variable, or any *instances* of the *Animal* class.
 
-## ```__init__``` method
+## Class methods
+
+Methods are functions that are accessible through class *instances*, for example let's say you want to create a function to print all of the *attributes of a class* you could define the function in the class and then use the *self* operator to print the information.
+
+
+
+### Basic Syntax
+
+Setting up class methods is simple...
+
+
+
+### ```__init__``` method
 
 The ```__init__``` method in python acts as a [constructor](https://en.wikipedia.org/wiki/Constructor_(object-oriented_programming)) (sort of) in python. This means that it 'constructs' the instance.
 
@@ -344,7 +356,11 @@ For more details check out: https://github.com/canadian-coding/posts/tree/master
 
 *Class*: A template to create *Instance(s)/Object(s)* from. Classes exist to bundle data (attributes) and functions (methods) into abstractions that are meaningful. A good analogy is to think of a cookie cutter as a class, that is a template used to cut (*instantiate*) cookies (*Instance(s)/Object(s)*)
 
+
+
 For example you could have an Animal class that can be used to create *Instance(s)/Object(s)* to bundle data and functions about animals, or a user class that can be used to create *Instance(s)/Object(s)* to bundle data and functions about each user of an app.
+
+
 
 *Instance/Object*: An object representing something, created from a class (used as a template). A good analogy is to think of a cookie cutter as a class, that is a template used to cut (*instantiate*) cookies (*Instance(s)/Object(s)*).
 
@@ -352,10 +368,18 @@ For example if you had an Animal class, you could use it to *instantiate* a leop
 
 In python people use *Instance* and *Object* interchangeably, and the same is true for many other object-oriented languages.
 
+
+
 *Instantiate*: The act of creating (initializing) an *Instance/Object* from a *class*. A good analogy is to think of a cookie cutter as a *class*, that is a template used to cut (*instantiate*) cookies (*Instance(s)/Object(s)*)
+
+
 
 *Attribute*: A variable that is specific to a *class* or *Instance/Object*.
 
+
+
 *Method*: A function that is specific to a *class* or *Instance/Object*.
+
+
 
 *Constructor*: What typically gets called on *instantiation* of an *Instance/Object*. This is a concept used broadly in object-oriented languages, but in python this roughly corresponds to the ```__init__``` method.
