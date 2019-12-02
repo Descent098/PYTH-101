@@ -486,3 +486,61 @@ while x < 3: # Loop while x is less than the number of sublists in numbers
     print(numbers[1][x]) # Take the Second lists x'th term and print it
     print(numbers[2][x]) # Take the Third lists x'th term and print it
     x += 1 # Increment loop counter by 1
+
+"""===================== Module 4 ==========================="""
+
+"""
+    =========== Exercise 1 =============
+
+    Add a docstring to the function below.
+    The function takes a list and prints all 
+    the items in the list.
+
+    Bonus: Try using type declaration for the argument.
+"""
+
+def print_list(list_to_parse: list):
+    """Takes in a list and print's it's items
+    
+    Parameters
+    ----------
+    list_to_parse:
+        The list you want to print the items of."""
+    for item in list_to_parse:
+        print(item)
+
+"""
+    =========== Exercise 2 =============
+
+    Implement the delete_item() function
+    below, all the details to do so should
+    be there for you.
+
+    Hint: you can use del(list[index]) to remove
+    an item from a list.
+"""
+
+def delete_item(list_to_parse, item_index):
+    """Takes a list, removes an item at the 
+    specified index and returns the list
+    
+    Parameters
+    ----------
+    list_to_parse:
+        The list to remove the item from
+    
+    item_index:
+        The index to remove an item from
+    
+    Returns
+    -------
+    The list with the item removed
+    """
+    del(list_to_parse[item_index]) # Remove the item
+    return list_to_parse
+
+shopping_list = ["eggs", "ham", "sausages"] # A test list to remove an item from
+
+shopping_list = delete_item(shopping_list, 1) # Should remove 'ham' from the list
+
+print(shopping_list)
