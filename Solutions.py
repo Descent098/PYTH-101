@@ -763,3 +763,114 @@ print(john.premium) # Should Print True
 """
 
 # I already did the above exercise, take a look at exercise 2 for answer
+
+"""===================== Module 6 ==========================="""
+
+
+"""
+    =========== Exercise 1 =============
+
+    import the math module and use math.sqrt() on
+    a user inputted variable.
+
+    NOTE: you have the input converted to an int
+    automatically using int(input()).
+"""
+
+import math
+
+value = int(input("Enter a number to square: "))
+
+print(math.sqrt(value))
+
+"""
+    =========== Exercise 2 =============
+
+    import the sleep function from the time module as pause
+    and run pause(5)
+"""
+from time import sleep as pause
+
+pause(5)
+
+
+"""
+    =========== Exercise 3 (question) =============
+
+    import the sleep function from the time module as pause.
+
+    Write a function called pause() that takes an argument and
+    prints it.
+
+    Which pause() will be called, and why?
+"""
+
+"""If you write a function called pause() it will run instead
+of the imported pause function because python runs files top down
+meaning that it will overwrite the imported function when defined.
+"""
+
+
+def challenge_one():
+    """
+    =========== Challenge 1 =============
+
+    TQDM is a third-party module that allows you to create progress
+    bars for loops.
+
+    Figure out how to install the python module TQDM with pip and 
+    look at the documentation to help figure out how to create a for
+    loop with a progress bar that goes through 10 iterations at 1 
+    iteration a second.
+
+    I have setup a skeleton version of the code below that will get you
+    90% of the way there, all you need to do is figure out the TQDM part.
+
+    """
+
+    import time
+    from tqdm import tqdm
+    for number in tqdm(range(10)):
+        time.sleep(1) #Waits one second before continuing.
+
+def challenge_two():
+    """
+    =========== Challenge 2 =============
+
+    Create a python module (another file in this folder) called
+    my_module.py
+    
+    Inside of my_module.py define a function called print_backwards().
+    This function should take a string and return the string in reverse.
+    For example: print_backwards('hello') # returns 'olleh'
+
+    You will know that you did it right if when you run this challenge_two()
+    function it prints 'olleh'.
+
+    Hint: You can reverse a string using reversed()
+    """
+    # from my_module import print_backwards # Uncommnet when you have made the file
+    # print(print_backwards("hello")) # Uncommnet when you have made the file
+
+"""Since I can't add the extra file here this is what it would contain:
+
+my_module.py
+------------
+
+def print_backwards(value):
+    print(reversed(value))
+
+"""
+
+"""
+    =========== Challenge 3 =============
+
+    Go to https://github.com/Descent098/Resume-Site, download the repository and
+    run the application.
+"""
+
+"""There are 3 steps to this
+1. Go to the link and download the zip file of the project
+2. run pip install -r requirements.txt inside the newly extracted project
+3. read the documentation to find out you need to run python routes.py to start the project
+"""
