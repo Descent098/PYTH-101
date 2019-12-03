@@ -1,4 +1,4 @@
-import datetime # SEE: https://docs.python.org/3/library/datetime.html
+import datetime # SEE: https://docs.python.org/3/library/datetime.html and the extras module for details
 
 """
     =========== Exercise 1 =============
@@ -33,6 +33,11 @@ class Contractor:
         number_of_planks = None # Just a dummy value, replace with the real calculation
         return f"You need {number_of_planks} plank(s) of wood to build this wall"
 
+dave = Contractor(2)
+print(dave.estimate_planks(10)) # Should be 5 planks
+
+billy = Contractor(5)
+print(billy.estimate_planks(225)) # Should be 45 planks
 
 """
     =========== Exercise 2 =============
@@ -42,7 +47,7 @@ class Contractor:
             2. birthday(datetime.date): Users birthday as a datetime object
             3. premium (boolean): True or false based on if user is a premium user or not
         Method:
-            1. next_birthday: A method that returns a string of the users next birthday, if it is today then return 'happy birthday!' instead.
+            1. next_birthday: A method that returns a string of the users birthday this year, if it is today then return 'Happy Birthday!' instead.
     
 """
 class User:
@@ -52,6 +57,10 @@ class User:
     def next_birthday(self):
         pass
         
+john = User("John Doe", datetime.date(1995,10,25), True)
+print(john.next_birthday()) # You will have to validate this yourself
+print("John Doe" in john.name)  # Should print True
+print(john.premium) # Should Print True
 
 
 """
@@ -59,18 +68,3 @@ class User:
     Take the previous user class from before, and add a class docstring to it.
     For more details on docstrings and their formatting check out: https://github.com/canadian-coding/posts/tree/master/2019/July/25th%20-%20Docstrings%20in%20python
 """
-
-
-if __name__ == "__main__":
-    # Exercise 1 testing
-    dave = Contractor(2)
-    print(dave.estimate_planks(10)) # Should be 5 planks
-
-    billy = Contractor(5)
-    print(billy.estimate_planks(225)) # Should be 45 planks
-
-    # Exercise 2 testing (uncomment when ready)
-    # john = User("John Doe", datetime.date(1995,10,25), True)
-    # print(john.next_birthday() # You will have to validate this yourself
-    # print("John Doe" in john.name)
-    # print(john.premium) # Should Print True

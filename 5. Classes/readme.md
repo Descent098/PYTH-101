@@ -1,8 +1,12 @@
 # Classes
 
-*Since this is such a long and complicated module I have included a glossary at the bottom to help sort things out*
+*Since this is such a long and complicated module I have included a glossary at the bottom to help sort things out. I would also recommend quickly skipping to the section about **f-strings** in python (found in the extras module) as it will help the code make more sense.*
+
+---
 
 Classes are a way of bundling data (attributes) and functions (sometimes called methods) into abstractions in python.
+
+
 
 For example, let's say you are writing an app to store a bunch of data about animals. For this you can set up a class that has the basic attributes of all animals like species name, endemic regions (where it lives), common name (what people know it as) etc.
 
@@ -15,9 +19,12 @@ class Animal:
 
     Attributes
     ----------
-    species_name(str): The technical species name of the animal
-    regions(list[str]): A list of regions the animal is endemic to
-    common_name(str): The colloquial name of the animal
+    species_name : (str) 
+    	The technical species name of the animal
+    regions : (list[str]) 
+    	A list of regions the animal is endemic to
+    common_name : (str) 
+    	The colloquial name of the animal
     """
     self.species_name = species_name
     self.regions = regions
@@ -49,9 +56,12 @@ class Animal:
 
     Attributes
     ----------
-    species_name(str): The technical species name of the animal
-    regions(list[str]): A list of regions the animal is endemic to
-    common_name(str): The colloquial name of the animal
+    species_name : (str) 
+    	The technical species name of the animal
+    regions : (list[str]) 
+    	A list of regions the animal is endemic to
+    common_name : (str) 
+    	The colloquial name of the animal
     """
     self.species_name = species_name
     self.regions = regions
@@ -143,11 +153,14 @@ class Animal:
   def __init__(self, species_name, regions, common_name):
     """A class to represent a generic animal
 
-    Attributes
+   Attributes
     ----------
-    species_name(str): The technical species name of the animal
-    regions(list[str]): A list of regions the animal is endemic to
-    common_name(str): The colloquial name of the animal
+    species_name : (str) 
+    	The technical species name of the animal
+    regions : (list[str]) 
+    	A list of regions the animal is endemic to
+    common_name : (str) 
+    	The colloquial name of the animal
     """
     self.species_name = species_name
     self.regions = regions
@@ -184,13 +197,39 @@ As you can see because the variable belongs to the *class* and not the *instance
 
 ## Class methods
 
-Methods are functions that are accessible through class *instances*, for example let's say you want to create a function to print all of the *attributes of a class* you could define the function in the class and then use the *self* operator to print the information.
+Methods are functions that are accessible through class *instances*, for example let's say you want to create a function to print all of the *attributes of a class* you could define the function in the class and then use the *self* operator to print the information. We have already seen this in fact in the above examples with our Animal class, the print_info() method used earlier is a class method.
 
 
 
 ### Basic Syntax
 
-Setting up class methods is simple...
+Setting up class methods is the same as setting up a regular function, you just need to indent it to the same line as the class and **always** pass *self* as an argument. For example:
+
+```python
+class Animal:
+  def __init__(self, species_name, regions, common_name):
+    """A class to represent a generic animal
+
+    Attributes
+    ----------
+    species_name : (str) 
+    	The technical species name of the animal
+    regions : (list[str]) 
+    	A list of regions the animal is endemic to
+    common_name : (str) 
+    	The colloquial name of the animal
+    """
+    self.species_name = species_name
+    self.regions = regions
+    self.common_name = common_name
+  def print_info(self):
+    """Prints information about animal instance"""
+    print(f"\nCommon Name: {self.common_name}\nSpecies: {self.species_name}\nRegions: {self.regions}")
+```
+
+
+
+
 
 
 
