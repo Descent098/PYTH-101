@@ -1,6 +1,6 @@
 # PYTH-101 Beginner Python Course
 
-The purpose of this repository is to go through each set of exercises sequentially to help you learn python. Once you have finished reading this file you can start from ```0. Basic syntax and additional course information``` to get the ball rolling.
+The purpose of this repository is to go through each set of exercises sequentially to help you learn python. Once you have finished reading this file you can start from ```0. Basic syntax and additional course information``` to get the ball rolling. Alternatively you can checkout the course on my website [here]( https://canadiancoding.ca/courses/course/PYTH-101/ ).
 
 ## Python Versions
 
@@ -34,7 +34,7 @@ A: I would never suggest you don't learn many languages (I have learned the ones
 
 ## Note about markdown files
 
-Markdown files (files that end in .md) are intended to be read in a markdown viewer. The easiest way to read the readme's in each folder is to keep https://github.com/Descent098/PYTH-101 open in github and navigate to each folder. Github has a built in markdown viewer that will let you read the files in their intended format right on your webpage.
+Markdown files (files that end in .md) are intended to be read in a markdown viewer. The easiest way to read the readme's in each folder is to keep https://github.com/Descent098/PYTH-101 open in github and navigate to each folder. Github has a built in markdown viewer that will let you read the files in their intended format right on your webpage. Alternatively you can checkout the course on my website [here]( https://canadiancoding.ca/courses/course/PYTH-101/ ).
 
 
 
