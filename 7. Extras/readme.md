@@ -33,7 +33,7 @@ name = "Kieran Wood"
 
 print(greeting) # Prints: Welcome John Doe!
 
-greeting = f"Welcome, {name}!" # Since it's recreated it  picks up the new value of name
+greeting = f"Welcome, {name}!" # Since it's recreated it picks up the new value of name
 
 print(greeting) # Prints: Welcome Kieran Wood!
 ```
@@ -41,6 +41,70 @@ print(greeting) # Prints: Welcome Kieran Wood!
 
 
 I wrote a post with more information about this [here]( https://canadiancoding.ca/posts/details/8/ )
+
+
+
+## Dates
+
+python comes with a great module for handling dates and times called datetime. Here are some examples of basic usage of the module:
+
+
+
+### Create Date object
+
+The module works off of classes that you can use to create objects, to create a simple date object you just need to provide 3 attributes, a year (int), a month (int), and day (int):
+
+```python
+import datetime
+
+appolo_11_launch = datetime.date(1959, 9, 13)
+```
+
+
+
+### Compare date objects
+
+You can make comparisons to date objects the same way you would regular numbers:
+
+```python
+import datetime
+
+appolo_11_launch = datetime.date(1959, 9, 13)
+
+falcon_9_first_launch = datetime.date(2010, 6, 4)
+
+print(falcon_9_first_launch > appolo_11_launch) # prints: True
+```
+
+
+
+### Get date object attributes
+
+You can get the attributes of a date object (the year, month, day) the same way you access class attributes:
+
+```python
+import datetime
+
+appolo_11_launch = datetime.date(1959, 9, 13)
+
+appolo_11_launch.year # prints: 1959
+
+appolo_11_launch.month # Prints: 9
+
+appolo_11_launch.day # Prints: 13
+```
+
+
+
+### Get Current Date
+
+You can get the current date using the datetime.date.today() function, which returns a datetime object of today's date:
+
+```python
+import datetime
+
+current_datetime = datetime.date.today() # Returns datetime object of todays date
+```
 
 
 
