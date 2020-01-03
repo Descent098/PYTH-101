@@ -212,3 +212,12 @@ To run your code (after you've written it) use: ```python (filename).py``` or ``
 ## Exercise time
 
 Check out the ```exercises.py``` for some simple exercises to try out.
+
+## Additional Resources
+
+[Installing python on debian linux](https://www.youtube.com/watch?v=VbXE5LR1BLg)
+
+[repl.it](https://repl.it/)
+
+[PYTH-101 YouTube Playlist](https://www.youtube.com/watch?v=IokrLpjfJs8&list=PLY1W45yrIxjRIHAusF1AkfWKBecuJUMEH)
+
