@@ -1,6 +1,10 @@
 # PYTH-101 Beginner Python Course
 
-The purpose of this repository is to go through each set of exercises sequentially to help you learn python. Once you have finished reading this file you can start from ```0. Basic syntax and additional course information``` to get the ball rolling. Alternatively you can checkout the course on my website [here]( https://canadiancoding.ca/courses/course/PYTH-101/ ).
+The purpose of this repository is to go through each set of exercises sequentially to help you learn python. Once you have finished reading this file you can start from ```0. Basic syntax and additional course information``` to get the ball rolling. 
+
+A video version is also available below:
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/IokrLpjfJs8/0.jpg)](http://www.youtube.com/watch?v=IokrLpjfJs8&list=PLY1W45yrIxjRIHAusF1AkfWKBecuJUMEH)
 
 ## Python Versions
 
